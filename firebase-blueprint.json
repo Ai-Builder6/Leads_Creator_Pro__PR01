@@ -1,0 +1,208 @@
+{
+  "entities": {
+    "SavedAdAsset": {
+      "title": "SavedAdAsset",
+      "description": "Reusable Facebook, Instagram, and Google Ads images, 1024x1024 logos, headlines, descriptions, and ad creatives.",
+      "type": "object",
+      "properties": {
+        "ownerId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "UID of the authenticated user who owns this saved asset."
+        },
+        "assetType": {
+          "type": "string",
+          "enum": [
+            "image",
+            "logo",
+            "headline",
+            "description",
+            "facebook_ad",
+            "campaign_bundle"
+          ],
+          "description": "Category of reusable ad asset."
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "description": "Display title or headline of the saved asset."
+        },
+        "primaryText": {
+          "type": "string",
+          "maxLength": 2000,
+          "description": "Ad body copy, prompt, or headline text."
+        },
+        "secondaryText": {
+          "type": "string",
+          "maxLength": 500,
+          "description": "Link description, CTA, or metadata notes."
+        },
+        "aspectRatio": {
+          "type": "string",
+          "maxLength": 20,
+          "description": "Image aspect ratio such as 1:1, 4:3, 16:9, or 9:16."
+        },
+        "imageDataUrl": {
+          "type": "string",
+          "maxLength": 750000,
+          "description": "Compressed data URL or asset path for the saved visual."
+        },
+        "category": {
+          "type": "string",
+          "maxLength": 80,
+          "description": "Cleaning service angle such as Move-Out, Deep Clean, or Brand Logo."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the asset was created."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the asset was last updated."
+        }
+      },
+      "required": [
+        "ownerId",
+        "assetType",
+        "title",
+        "primaryText",
+        "secondaryText",
+        "aspectRatio",
+        "imageDataUrl",
+        "category",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "LinkedSheetSync": {
+      "title": "LinkedSheetSync",
+      "description": "Connected Google Sheet configuration for 2-way campaign and ad asset synchronization.",
+      "type": "object",
+      "properties": {
+        "ownerId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "UID of the authenticated owner."
+        },
+        "spreadsheetId": {
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 128,
+          "description": "Google Sheets spreadsheetId."
+        },
+        "sheetTitle": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "description": "Human-readable title of the connected Google Sheet."
+        },
+        "spreadsheetUrl": {
+          "type": "string",
+          "maxLength": 500,
+          "description": "Direct URL to open the Google Sheet."
+        },
+        "autoSyncEnabled": {
+          "type": "boolean",
+          "description": "Whether changes automatically sync to the linked sheet."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last sync timestamp."
+        }
+      },
+      "required": [
+        "ownerId",
+        "spreadsheetId",
+        "sheetTitle",
+        "spreadsheetUrl",
+        "autoSyncEnabled",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "AdCreatorReminder": {
+      "title": "AdCreatorReminder",
+      "description": "Scheduled reminder for the TidyUps Ads Creator.",
+      "type": "object",
+      "properties": {
+        "ownerId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "UID of the authenticated user."
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "description": "Reminder title."
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 500,
+          "description": "Action notes or target URL."
+        },
+        "dueAtIso": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "Scheduled ISO date/time string."
+        },
+        "frequency": {
+          "type": "string",
+          "enum": ["once", "daily", "weekly"],
+          "description": "Recurrence schedule."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "completed"],
+          "description": "Current status of the reminder."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp."
+        }
+      },
+      "required": [
+        "ownerId",
+        "title",
+        "notes",
+        "dueAtIso",
+        "frequency",
+        "status",
+        "createdAt",
+        "updatedAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/ad_assets/{assetId}": {
+      "schema": "SavedAdAsset",
+      "description": "Saved reusable Facebook/Google ad images, logos, headlines, descriptions, and ad templates."
+    },
+    "/linked_sheets/{sheetDocId}": {
+      "schema": "LinkedSheetSync",
+      "description": "Connected Google Sheets for live 2-way sync."
+    },
+    "/ad_reminders/{reminderId}": {
+      "schema": "AdCreatorReminder",
+      "description": "Scheduled reminders for the Ads Creator."
+    }
+  }
+}

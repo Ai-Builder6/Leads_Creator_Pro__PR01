@@ -1,0 +1,890 @@
+{
+  "mutateOperations": [
+    {
+      "campaignBudgetOperation": {
+        "create": {
+          "resourceName": "customers/1234567890/campaignBudgets/-1",
+          "name": "Search - TidyUps Edmonton - Move-Out & Deep Clean - Budget #6114",
+          "amountMicros": "25000000",
+          "deliveryMethod": "STANDARD",
+          "explicitlyShared": false
+        }
+      }
+    },
+    {
+      "campaignOperation": {
+        "create": {
+          "resourceName": "customers/1234567890/campaigns/-2",
+          "name": "Search - TidyUps Edmonton - Move-Out & Deep Clean",
+          "advertisingChannelType": "SEARCH",
+          "status": "ENABLED",
+          "campaignBudget": "customers/1234567890/campaignBudgets/-1",
+          "networkSettings": {
+            "targetGoogleSearch": true,
+            "targetSearchNetwork": true,
+            "targetContentNetwork": false
+          },
+          "targetSpend": {
+            "cpcBidCeilingMicros": "3500000"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "location": {
+            "geoTargetConstant": "geoTargetConstants/1001801"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "jobs",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "job",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "hiring",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "careers",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "career",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "salary",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "wages",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "employment",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "resume",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "Indeed",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "training",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "course",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "courses",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "certification",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "how to",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "do it yourself",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "diy",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "free",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "cleaning supplies",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "cleaning products",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "cleaning equipment",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "equipment rental",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "vacuum repair",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "car cleaning",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "auto detailing",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "car wash",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "dry cleaning",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "laundry service",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "duct cleaning",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "chimney cleaning",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "gutter cleaning",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "pool cleaning",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "teeth cleaning",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "dental cleaning",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "office cleaning",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "commercial cleaning",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "campaignCriterionOperation": {
+        "create": {
+          "campaign": "customers/1234567890/campaigns/-2",
+          "negative": true,
+          "keyword": {
+            "text": "janitorial",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupOperation": {
+        "create": {
+          "resourceName": "customers/1234567890/adGroups/-3",
+          "name": "Edmonton Move-Out & Deep Cleaning",
+          "campaign": "customers/1234567890/campaigns/-2",
+          "status": "ENABLED",
+          "type": "SEARCH_STANDARD",
+          "cpcBidMicros": "3500000"
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "move out cleaning edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "move out cleaners edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "move out cleaning services edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "end of tenancy cleaning edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "rental cleaning edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "apartment move out cleaning edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "house move out cleaning edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "move in cleaning edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "move in move out cleaning edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "deep cleaning edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "deep house cleaning edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "deep cleaning services edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "deep cleaners edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "house deep cleaning edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "apartment deep cleaning edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "professional house cleaning edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "move out cleaning near me",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "deep cleaning near me",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "move out cleaning south edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupCriterionOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "keyword": {
+            "text": "deep cleaning south edmonton",
+            "matchType": "PHRASE"
+          }
+        }
+      }
+    },
+    {
+      "adGroupAdOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "ad": {
+            "finalUrls": [
+              "https://app.tidyupscleaning.com/booking"
+            ],
+            "responsiveSearchAd": {
+              "headlines": [
+                {
+                  "text": "Move Out Cleaning Edmonton"
+                },
+                {
+                  "text": "Deep House Cleaning Edmonton"
+                },
+                {
+                  "text": "TidyUps Cleaning Service"
+                },
+                {
+                  "text": "End of Tenancy Clean Edmonton"
+                },
+                {
+                  "text": "Get Your Move-Out Quote Today"
+                },
+                {
+                  "text": "Call TidyUps: 587-742-2500"
+                },
+                {
+                  "text": "Book Online in 60 Seconds"
+                },
+                {
+                  "text": "House & Apartment Move-Out"
+                },
+                {
+                  "text": "Baseboards, Kitchens & Baths"
+                },
+                {
+                  "text": "South Edmonton & All YEG"
+                },
+                {
+                  "text": "Move-In & Rental Cleaning Pros"
+                },
+                {
+                  "text": "Tough Grime & Buildup Gone"
+                },
+                {
+                  "text": "100% Satisfaction Guaranteed"
+                },
+                {
+                  "text": "Upfront Flat-Rate Quotes"
+                }
+              ],
+              "descriptions": [
+                {
+                  "text": "Moving out? Leave the cleaning to Tidyups. Get your Edmonton move-out quote today."
+                },
+                {
+                  "text": "Built-up dirt and grime? Our deep cleaning gives your home a fresh start. Book today."
+                },
+                {
+                  "text": "Make moving easier with thorough kitchen, bathroom and floor cleaning. Get a quote."
+                },
+                {
+                  "text": "From baseboards to bathroom buildup, we handle the details. Book your deep clean."
+                }
+              ],
+              "path1": "edmonton",
+              "path2": "move-out-deep"
+            }
+          }
+        }
+      }
+    },
+    {
+      "adGroupAdOperation": {
+        "create": {
+          "adGroup": "customers/1234567890/adGroups/-3",
+          "status": "ENABLED",
+          "ad": {
+            "finalUrls": [
+              "https://app.tidyupscleaning.com/booking"
+            ],
+            "responsiveSearchAd": {
+              "headlines": [
+                {
+                  "text": "Move Out Cleaning Edmonton"
+                },
+                {
+                  "text": "Deep House Cleaning Edmonton"
+                },
+                {
+                  "text": "TidyUps Cleaning Service"
+                },
+                {
+                  "text": "End of Tenancy Clean Edmonton"
+                },
+                {
+                  "text": "Get Your Move-Out Quote Today"
+                },
+                {
+                  "text": "Call TidyUps: 587-742-2500"
+                },
+                {
+                  "text": "Book Online in 60 Seconds"
+                },
+                {
+                  "text": "House & Apartment Move-Out"
+                },
+                {
+                  "text": "Baseboards, Kitchens & Baths"
+                },
+                {
+                  "text": "South Edmonton & All YEG"
+                },
+                {
+                  "text": "Move-In & Rental Cleaning Pros"
+                },
+                {
+                  "text": "Tough Grime & Buildup Gone"
+                },
+                {
+                  "text": "100% Satisfaction Guaranteed"
+                },
+                {
+                  "text": "Upfront Flat-Rate Quotes"
+                }
+              ],
+              "descriptions": [
+                {
+                  "text": "Built-up dirt and grime? Our deep cleaning gives your home a fresh start. Book today."
+                },
+                {
+                  "text": "Make moving easier with thorough kitchen, bathroom and floor cleaning. Get a quote."
+                },
+                {
+                  "text": "From baseboards to bathroom buildup, we handle the details. Book your deep clean."
+                },
+                {
+                  "text": "Need move-out or deep cleaning in Edmonton? Call Tidyups at 587-742-2500 today."
+                }
+              ],
+              "path1": "edmonton",
+              "path2": "move-out-deep"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

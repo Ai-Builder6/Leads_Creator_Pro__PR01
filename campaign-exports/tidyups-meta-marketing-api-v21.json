@@ -1,0 +1,193 @@
+{
+  "apiVersion": "v21.0",
+  "accountContext": {
+    "adAccountId": "act_1029384756",
+    "facebookPageId": "TidyUpsCleaningEdmonton",
+    "businessName": "TidyUps Cleaning",
+    "phoneNumber": "587-742-2500",
+    "bookingUrl": "https://app.tidyupscleaning.com/booking",
+    "privacyPolicyUrl": "https://ads.tidyupscleaning.com/privacy"
+  },
+  "campaign": {
+    "name": "Meta Leads - TidyUps Edmonton - Move-Out & Deep Cleaning",
+    "objective": "OUTCOME_LEADS",
+    "status": "PAUSED",
+    "special_ad_categories": [
+      "NONE"
+    ]
+  },
+  "adSet": {
+    "name": "Edmonton & South Edmonton +25km | Homeowners & Movers (23-65+)",
+    "daily_budget": 2000,
+    "billing_event": "IMPRESSIONS",
+    "optimization_goal": "LEAD_GENERATION",
+    "destination_type": "WEBSITE_AND_INSTANT_FORM",
+    "targeting": {
+      "geo_locations": {
+        "custom_locations": [
+          {
+            "address_string": "Edmonton, AB (+25 km)",
+            "radius": 25,
+            "distance_unit": "kilometer"
+          },
+          {
+            "address_string": "South Edmonton, AB",
+            "radius": 25,
+            "distance_unit": "kilometer"
+          },
+          {
+            "address_string": "St. Albert, AB",
+            "radius": 25,
+            "distance_unit": "kilometer"
+          },
+          {
+            "address_string": "Sherwood Park, AB",
+            "radius": 25,
+            "distance_unit": "kilometer"
+          }
+        ]
+      },
+      "age_min": 23,
+      "age_max": 65,
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003094821",
+              "name": "Moving / Relocation"
+            },
+            {
+              "id": "6003194821",
+              "name": "Apartment / Condo Renters"
+            },
+            {
+              "id": "6003294821",
+              "name": "Home Improvement & Renovation"
+            },
+            {
+              "id": "6003394821",
+              "name": "Real Estate & Property Management"
+            },
+            {
+              "id": "6003494821",
+              "name": "Busy Parents & Professionals"
+            }
+          ]
+        }
+      ],
+      "publisher_platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "facebook_positions": [
+        "feed",
+        "marketplace",
+        "story",
+        "facebook_reels"
+      ],
+      "instagram_positions": [
+        "stream",
+        "story",
+        "reels"
+      ]
+    }
+  },
+  "instantLeadForm": {
+    "name": "TidyUps Cleaning — Edmonton & South Edmonton Instant Quote Form",
+    "privacy_policy": {
+      "url": "https://ads.tidyupscleaning.com/privacy",
+      "link_text": "TidyUps Cleaning Privacy Policy"
+    },
+    "questions": [
+      {
+        "type": "CUSTOM",
+        "label": "Full Name"
+      },
+      {
+        "type": "CUSTOM",
+        "label": "Phone Number (for fast SMS/call quote)"
+      },
+      {
+        "type": "CUSTOM",
+        "label": "Email Address"
+      },
+      {
+        "type": "CUSTOM",
+        "label": "What type of cleaning do you need? (Move-Out / Deep Clean / Move-In)"
+      },
+      {
+        "type": "CUSTOM",
+        "label": "How many bedrooms & bathrooms?"
+      }
+    ],
+    "thank_you_page": {
+      "title": "Thank You! Your TidyUps Cleaning Quote Is Being Prepared",
+      "body": "Need immediate service? Call us directly at 587-742-2500 or book online in 60 seconds.",
+      "button_text": "Book Online Now",
+      "button_type": "VIEW_WEBSITE",
+      "website_url": "https://app.tidyupscleaning.com/booking"
+    }
+  },
+  "creatives": [
+    {
+      "name": "Ad 1: Move-Out & End of Tenancy Inspection Clean",
+      "angle": "Landlord Checklist & Stress-Free Moving",
+      "object_story_spec": {
+        "page_id": "TidyUpsCleaningEdmonton",
+        "link_data": {
+          "message": "Moving out in Edmonton? Leave the scrubbing to TidyUps Cleaning ✨\n\nWe handle the full landlord & end-of-tenancy inspection checklist so you can focus on your move:\n✅ Inside appliances, cabinets & drawers\n✅ Hand-wiped baseboards, doors & window tracks\n✅ Sanitized bathrooms, tubs, showers & floors\n✅ Upfront flat-rate quotes & 24-hour satisfaction guarantee\n\n📲 Book online in 60 seconds at app.tidyupscleaning.com/booking or call 587-742-2500 today!",
+          "link": "https://app.tidyupscleaning.com/booking",
+          "name": "Edmonton Move-Out Cleaning Pros",
+          "description": "Book in 60s or Call 587-742-2500",
+          "caption": "app.tidyupscleaning.com",
+          "call_to_action": {
+            "type": "GET_QUOTE",
+            "value": {
+              "link": "https://app.tidyupscleaning.com/booking"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Ad 2: Full Home Deep Cleaning Reset",
+      "angle": "Before/After Deep Grime & Baseboard Reset",
+      "object_story_spec": {
+        "page_id": "TidyUpsCleaningEdmonton",
+        "link_data": {
+          "message": "Built-up dirt, kitchen grease, or bathroom grime? Give your Edmonton home a true top-to-bottom fresh start 🏡✨\n\nOur Edmonton Deep Cleaning crew tackles the details regular cleaning misses:\n✨ Baseboards, trim, light switches & door frames\n✨ Deep kitchen & bathroom buildup removal\n✨ Eco-friendly supplies & background-checked pros\n\nTap 'Book Now' for an instant online quote or call TidyUps at 587-742-2500!",
+          "link": "https://app.tidyupscleaning.com/booking",
+          "name": "Give Your Home a Deep Clean Reset",
+          "description": "Edmonton & South Edmonton",
+          "caption": "app.tidyupscleaning.com",
+          "call_to_action": {
+            "type": "BOOK_NOW",
+            "value": {
+              "link": "https://app.tidyupscleaning.com/booking"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Ad 3: Direct Call / Instant Quote (Fastest Response)",
+      "angle": "Urgent Same-Week Move-Out & Deep Clean",
+      "object_story_spec": {
+        "page_id": "TidyUpsCleaningEdmonton",
+        "link_data": {
+          "message": "Need move-out or deep house cleaning in Edmonton & South Edmonton this week? We have openings ready! 🚀\n\n• House, Condo & Apartment Move-Out Cleaning\n• End of Tenancy & Rental Turnover Cleaning\n• Full Home Deep Cleaning Packages\n\n📞 Call TidyUps directly at 587-742-2500 or get your instant quote online at app.tidyupscleaning.com/booking",
+          "link": "https://app.tidyupscleaning.com/booking",
+          "name": "Call TidyUps: 587-742-2500",
+          "description": "Instant Online Booking Available",
+          "caption": "app.tidyupscleaning.com",
+          "call_to_action": {
+            "type": "CALL_NOW",
+            "value": {
+              "link": "https://app.tidyupscleaning.com/booking"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
